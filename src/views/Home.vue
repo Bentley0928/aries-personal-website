@@ -14,9 +14,8 @@
     </div>
     <div id="about" class="card">
       <h2>關於我</h2>
-      <p>你好，我是白羊，很高興認識你。</p>
-      <p>左手編程、右手設計，我喜歡運用資訊技術解決生活大小事，透過設計充實生活。</p>
-      <p>現任李梅樹紀念館資訊組RD、蘋果仁科技媒體編輯。</p>
+      <p>你好，我是亮軒，台中一中高一學生。</p>
+      <p>喜歡資訊類科</p>
     </div>
     <div id="skill" class="card">
       <h2>技能樹</h2>
@@ -39,85 +38,57 @@
   export default {
     data () {
       return {
-        name: 'Aries Cs',
-        id: '@aries0d0f',
-        photo: 'https://i.imgur.com/ufhMP9v.jpg',
+        name: 'Bentley Huang',
+        id: '@bentley0928',
+        photo: 'https://i.imgur.com/rmPdYCC.jpg',
         contacts: [
           {
-            link: 'https://github.com/Aries0d0f',
+            link: 'https://github.com/Bentley0928',
             icon: ['fab', 'github']
           },
           {
-            link: 'mailto:aries0d0f@gmail.com',
+            link: 'bentley881@gmail.com',
             icon: ['fas', 'envelope']
           },
           {
-            link: 'tel:+886966657716',
+            link: 'tel:+886966436957',
             icon: ['fas', 'phone']
           },
           {
-            link: 'https://fb.com/aries0d0f',
+            link: 'https://www.facebook.com/bentley0928',
             icon: ['fab', 'facebook-f']
           },
           {
-            link: 'https://www.linkedin.com/in/aries-cs-55677a145/',
-            icon: ['fab', 'linkedin-in']
-          },
-          {
-            link: 'https://t.me/Aries0d0f',
+            link: 'https://t.me/Bentley0928',
             icon: ['fab', 'telegram-plane']
           }
         ],
         skill: [
           {
-            name: 'HTML & CSS',
-            rate: 5
-          },
-          {
-            name: 'UI／UX Design',
-            rate: 5
-          },
-          {
-            name: 'JavaScript',
+            name: 'C++',
             rate: 4
           },
           {
-            name: 'Node.js',
-            rate: 4
+            name: 'Python',
+            rate: 2
           },
           {
-            name: 'Vue.js',
-            rate: 4
-          },
-          {
-            name: 'Linux Server Administration',
-            rate: 4
-          },
-          {
-            name: 'RESTful API',
-            rate: 4
+            name: 'Security',
+            rate: 1
           }
         ],
         experience: [
           {
-            title: '李梅樹紀念館資訊組 RD',
+            title: 'SITCON 2017 Camp學員',
+            date: '2017'
+          },
+          {
+            title: '通過中一中2018資訊學科能力競賽初選',
             date: '現任'
           },
           {
-            title: '蘋果仁 Applealmond 編輯',
-            date: '現任'
-          },
-          {
-            title: '#UnaHack1 黑客松特別獎',
-            date: '2017/02'
-          },
-          {
-            title: '李梅樹紀念館暑期志工資訊能力訓練課程講師',
-            date: '2017/07'
-          },
-          {
-            title: '中崙高中資研社網頁前端課程專任講師',
-            date: '2017/10'
+            title: 'SITCON 2018 與會者',
+            date: '2018/3/10'
           }
         ]
       }
