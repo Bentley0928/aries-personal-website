@@ -1,0 +1,302 @@
+
+
+
+<!doctype html>
+<html>
+
+	<head>
+		<base href="http://www.51miaomiao.cn:80/jeewx/">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="viewport" content="width=720,maximum-scale=2.0, user-scalable=no" />
+		<link rel="stylesheet" href="webpage/device/detail/721/css/style_auto_5.css" />
+		<link rel="stylesheet" href="webpage/device/detail/721/css/index_06.css" />
+		<title>亮軒的空氣清新機</title>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="webpage/device/detail/721/js/jquery.2.1.min.js"></script>
+		<script type="text/javascript" src="webpage/device/detail/721/js/swiper.jquery.min.js"></script>
+		<script type="text/javascript" src="webpage/device/detail/721/js/miotLinkUartProtol.js"></script>
+		<script type="text/javascript" src="webpage/device/detail/721/js/deviceCodec_721.js"></script>
+		<script type="text/javascript" src="webpage/device/detail/721/js/weixinjsapi4.9.js"></script>
+	</head>
+	<body ontouchend="body_time()">
+		<div style="display: none">
+			<input type="hidden" id = "host" value="cms1.wechat.iot.0home.net"/>
+			<input type="hidden" id = "port" value="8081"/>
+			<input type="hidden" id = "reqTime" value="2018-11-13T12:12:56.796+0800"/>
+	  		<input type="hidden" id = "reqType" value="wechatHardware"/>
+	  		<input type="hidden" id = "accessKey" value="8uiruhjdnhdbbcgdg27723433"/>
+	  		<input type="hidden" id = "sign" value="339825F693922B672ADC2B7F66C949DD"/>
+	  		<input type="hidden" id = "openId" value="oDvuH1UhkjRwE4wfxi8XGc4q5a-U"/>
+	  		<input type="hidden" id = "deviceId" value="00:0E:A3:4C:E7:1B"/>
+	  		<input type="hidden" id = "modelId" value="721"/>
+	  		<input type="hidden" id = "puId" value="932363"/>
+	  		<input type="hidden" id = "deviceType" value="gh_e4a0bd88d263"/>
+	  		<input type="hidden" id = "weixinId" value="gh_e4a0bd88d263"/>
+    		<input type="hidden" id = "requrl" value="http://www.51miaomiao.cn/jeewx/deviceController/deviceDetail.do?openId=oDvuH1UhkjRwE4wfxi8XGc4q5a-U&deviceId=00:0E:A3:4C:E7:1B&modelId=721&puId=932363&deviceType=gh_e4a0bd88d263&shared=0&datetime=1542082260177"/>
+    		<input type="hidden" id = "nickName" value="智能空气净化器E7:1B"/>
+
+		</div>
+		<!--主页面-->
+		<div id="home_page" style="overflow: hidden;">
+
+			<div class="swiper-container" id="huadong" style="width: 100%;height: 100%;">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+			<!--top-->
+			<!--<div class="top"></div>-->
+			<!--topic1关机页面头部-->
+       		<!--<div class='topic1' >
+				<div  class="back" onclick="sendToNative_returnDeviceList();">
+					<span class="back1"></span>
+					<span class='return1' id="fh_1">返回</span>
+				</div>
+				<span class='logo' id="title1">亮軒的空氣清新機</span>
+			</div>-->
+
+			<div class="home_page_content">
+				<div class="content_top" style="height: 460px;">
+					<div class="state_circle" style="top: 59px;">
+						<div class="state_on">
+							<h5>PM2.5</h5>
+							<h1>--</h1>
+							<h4>--</h4>
+						</div>
+						<div class="state_off">未開啟</div>
+					</div>
+				</div>
+				<div class="content_wind">
+					<div class="content_function" style="border-right: 1px solid #EDEDED;">
+						<div class="wind_text">風速</div>
+						<div class="choose_wind_text">--</div>
+					</div>
+					<div class="content_function">
+						<span style="font-size: 24px;left: 10%;">氣態污染</span>
+						<span id="air_quity" style="right: 10%;">--</span>
+					</div>
+				</div>
+				<div class="content_show">
+					<img src="webpage/device/detail/721/images/dw.png"  />
+					<span id="location">--</span>
+					<span id="location_air">--</span>
+					<div class="outer_pm">
+						<p>室外PM值</p>
+						<p id="outer_index_pm">--</p>
+					</div>
+				</div>
+
+				<div class="content_home_bottom" id="state_home_bottom" >
+					<div class="bottom_function_box">
+						<div class="bottom_function">
+							<div class="bottom_function_1" id="tongs" ontouchstart="javascript:two_openBtn(this)" ontouchend="javascript:two_openendBtn(this)">
+								<p></p>
+							</div>
+							<p class="bottom_function_p" id="tongs_p">用不到啦</p>
+						</div>
+						<div class="bottom_function">
+							<div class="bottom_function_1" id="shaj" ontouchstart="javascript:two_openBtn(this)" ontouchend="javascript:two_openendBtn(this)">
+								<p style="background-image: url(webpage/device/detail/721/images/shajun.png);"></p>
+							</div>
+							<p class="bottom_function_p" id="shaj_p">殺菌</p>
+						</div>
+						<div class="bottom_function">
+							<div class="bottom_function_1" id="moshi" ontouchstart="javascript:two_openBtn(this)" ontouchend="javascript:two_openendBtn(this)">
+								<p style="background-image: url(webpage/device/detail/721/images/sleep.png);"></p>
+							</div>
+							<p class="bottom_function_p" id="moshi_p">模式</p>
+						</div>
+						<div class="bottom_function">
+							<div class="bottom_function_1" id="xingx" ontouchstart="javascript:two_openBtn(this)" ontouchend="javascript:two_openendBtn(this)">
+								<p style="background-image: url(webpage/device/detail/721/images/info.png);"></p>
+							</div>
+							<p class="bottom_function_p" id="xingx_p">設備狀態</p>
+						</div>
+					</div>
+					<div id="turn_off"></div>
+					<div id="state_btn" ontouchstart="javascript:white_openBtn(this)" ontouchend="javascript:white_openendBtn(this)">開啟</div>
+				</div>
+
+				<div class="content_home_bottom" id="state_info_bottom" hidden="hidden">
+					<div class="top_info">
+						<div class="formaldehyde_box">
+							<span class="text_name">甲醛濾網：</span>
+							<p><span id="jiaquan_value">--</span><span style="font-size: 20px;">%</span></p>
+							<span class="text_style" id="jiaquan_sign">正常</span>
+						</div>
+						<div class="formaldehyde_box">
+							<span class="text_name">離子箱：</span>
+							<p><span id="lizixiang_value">--</span><span style="font-size: 20px;">%</span></p>
+							<span class="text_style" id="lizixiang_sign">正常</span>
+						</div>
+						<div class="formaldehyde_box">
+							<span class="text_name">ESP：</span>
+							<span class="text_style" id="esp_sign">正常</span>
+						</div>
+					</div>
+					<div class="bottom_info" style="border-top: 1px solid #D8D8D8;">
+						<div class="bottom_error" id="error_bx" style="color:#FF2323 ;border-right: 1px solid #CCCCCC;" ontouchstart="javascript:white_openBtn(this)" ontouchend="javascript:white_openendBtn(this)">故障报修</div>
+						<div class="bottom_error" id="fanhui" ontouchstart="javascript:white_openBtn(this)" ontouchend="javascript:white_openendBtn(this)">返回</div>
+					</div>
+
+
+				</div>
+				<div class="content_home_bottom" id="state_info_error"  hidden="hidden">
+					<div class="top_info">
+						<div class="formaldehyde_box_gz" style="border-bottom: 0;">
+							<div class="error_info_text">1、关注爱达屋微信号快速申报故障；</div>
+							<div class="error_info_text">2、请询当地商家售后服务人员；</div>
+							<div class="error_info_text">3、拨打全国客服热线：400-8440-800。</div>
+
+						</div>
+						<img class="img_tp" src="webpage/device/detail/721/images/code.png"  />
+						<div class="adress_bottom">
+							<img src="webpage/device/detail/721/images/adress.png" alt="" />
+							<p>德国爱达屋科技（中国）有限公司</p>
+							<p>www.adawo.com</p>
+						</div>
+
+					</div>
+					<div id="back_error" ontouchstart="javascript:white_openBtn(this)" ontouchend="javascript:white_openendBtn(this)">返回</div>
+				</div>
+
+
+				</div>
+				<div style="width: 100%;height: 160px;background:transparent ;"> </div>
+			</div>
+			</div>
+			</div>
+		</div>
+		<!--风速-->
+		<div class="function_page" id="set_wind">
+			<div class="function_mid_page" style="top:263px;">
+				<div class="function_mid_page_box">
+					<div class="function_box_title" id="fengs">
+						風速設定
+					</div>
+					<div class="function_box_content">
+						<div class="slider_bg"></div>
+						<div id="mode-swiper5" class="container3" >
+							<div class="swiper-wrapper" >
+								<div class="swiper-slide font-size_35" id="low_dear">低速</div>
+								<div class="swiper-slide font-size_35" id="mid_dear">中速</div>
+								<div class="swiper-slide font-size_35" id="high_dear">高速</div>
+							</div>
+						</div>
+					</div>
+					<div class="function_box_bottom">
+						<div class="function_del" ontouchstart="javascript:white_openBtn(this)" ontouchend="javascript:white_openendBtn(this)">取消</div>
+						<div class="function_sure" ontouchstart="javascript:white_openBtn(this)" ontouchend="javascript:white_openendBtn(this)">確認</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/风速-->
+		<!--弹框-->
+		<div class="locktip" id="no_set_wind"><!--在加热、制冷与冷风状态下才可调节风速--></div>
+		<!--加载数据-->
+		<div class="load" id="load1">
+			<div id="load_bg" style="top: 430px;">
+				<img src="webpage/device/detail/721/images/loadJs.gif"/>
+			</div>
+		</div>
+		<!--数据异常页-->
+		<div id="err_pa" hidden="hidden">
+			<!--<div class="top"></div>-->
+			<!--<div class="head">
+				<div class="return" onclick="receiveFromNative_goBackRes()">
+					<img  id='back-bg' src="webpage/device/detail/721/images/arrow11.png">
+					<span id="fh">返回</span><br />
+				</div>
+				<div class="title">
+					<p id="equipment-theme"></p>
+					<img />
+				</div>
+			</div>-->
+			<div class="icon_err">
+				<img src="webpage/device/detail/721/images/express.png" />
+			</div>
+			<div class="tishi">
+				<p id="tishi1">啊哦，设备离线咯！</p>
+				<!--<p id="equipment-offline1">网络连接不通畅,再刷新试试吧！</p>-->
+			</div>
+			<div class="btn_re" id="btn_re1">
+				<p>重新加载</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="webpage/device/detail/721/js/miotLinkUartProtol.js"></script>
+	<script type="text/javascript" src="webpage/device/detail/721/js/miotOpenJsApi.1.0.7.js" ></script>
+	<script type="text/javascript">
+		var winwidth = 720;
+		$(document).ready(function(e) {
+			document.addEventListener('touchmove', function(e){e.preventDefault()}, false);
+			var screen_value = (window.screen.height / window.screen.width).toFixed(2);
+			var meta_two;
+			if (screen_value == 1.60) {
+				meta_two = document.createElement("meta");
+				meta_two.setAttribute("name", "viewport");
+				meta_two.setAttribute("content", "width=800,user-scalable=no");
+				document.getElementsByTagName("head")[0].appendChild(meta_two);
+				winwidth = 800;
+			} else if (screen_value == 1.67) {
+				meta_two = document.createElement("meta");
+				meta_two.setAttribute("name", "viewport");
+				meta_two.setAttribute("content", "width=760,user-scalable=no");
+				document.getElementsByTagName("head")[0].appendChild(meta_two);
+				winwidth = 760;
+			} else if (screen_value == 1.33) {
+				meta_two = document.createElement("meta");
+				meta_two.setAttribute("name", "viewport");
+				meta_two.setAttribute("content", "width=960,user-scalable=no");
+				document.getElementsByTagName("head")[0].appendChild(meta_two);
+				winwidth = 960;
+			} else if (screen_value == 1.5) {
+				meta_two = document.createElement("meta");
+				meta_two.setAttribute("name", "viewport");
+				meta_two.setAttribute("content", "width=854,user-scalable=no");
+				document.getElementsByTagName("head")[0].appendChild(meta_two);
+				winwidth = 854;
+			}
+
+
+		})
+
+		var mySwiper = new Swiper('#huadong', {
+			direction: "vertical",
+		    freeMode: true,
+		    slidesPerView: "auto",
+		    observer:true,
+		    observeParents:true
+		});
+
+	    var SwiperMode5,indexF5;
+		SwiperMode5 = new Swiper('#mode-swiper5', {
+	        direction: 'vertical',
+	        slidesPerView: 3,
+	        freeMode : false,
+	        observer:true,
+	        centeredSlides:true,
+			observeParents:true,
+			onSlideChangeEnd: function(){
+				indexF5=SwiperMode5.activeIndex+1;
+				console.log("新风档位indexF5="+indexF5);
+				console.log("新风档位="+$("#mode-swiper5 div:eq("+indexF5+")").html());
+			}
+	    });
+
+
+
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+			miotLinkBaseNativeJs_initAndroid();
+			miotLinkBaseNativeJs_initIos();
+		});
+	</script>
+	<script type="text/javascript" src="static/js/reload.js"></script>
+
+</html>
+
+
