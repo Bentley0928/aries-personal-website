@@ -40,7 +40,7 @@
       return {
         name: 'Bentley Huang',
         id: '@bentley0928',
-        photo: 'https://i.imgur.com/rmPdYCC.jpg',
+        photo: 'https://imgur.com/iT1u9mO.jpg',
         contacts: [
           {
             link: 'https://github.com/Bentley0928',
@@ -82,13 +82,18 @@
             title: 'SITCON 2017 Camp學員',
             date: '2017'
           },
-          {
-            title: '通過中一中2018資訊學科能力競賽初選',
-            date: '現任'
-          },
+          
           {
             title: 'SITCON 2018 與會者',
             date: '2018/3/10'
+          },
+          {
+            title: '進入中一中2018資訊校隊',
+            date: '2018/10'
+          },
+          {
+            title: '中區資訊學科能力競賽佳作',
+            date: '2018/11/14'
           }
         ]
       }
